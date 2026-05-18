@@ -5,4 +5,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: greeting statement
-        run: echo " hello to git hub actions"
+        run: |
+          echo "hi "
+          echo "welcome to git hub actions "
+  
+  build: 
+    runs-on: ubuntu:latest
+    steps:
+      - name: build step 
+        run: 
+          echo " this is demo build "
+  test:
+      runs-on: ubuntu:latest
+      steps:
+        - name: test
+          run: 
+           echo " this is demo test "
+  deploy:
+    runs-on: ubuntu:latest
+    steps:
+      - name: test
+        run:
+          echo " this is test "
