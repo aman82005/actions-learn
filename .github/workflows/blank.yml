@@ -6,9 +6,9 @@ jobs:
     steps:
       - name: greeting statement
         run: |
-          echo "hi $"{{vars.MY_NAME}}" "
+          echo "hi ${{vars.MY_NAME}} "
           echo "welcome to git hub actions "
-          echo " echo"{{secrets.DOCKER_PASSWORD}}""
+          echo " echo ${{secrets.DOCKER_PASSWORD}}"
   
   build: 
     runs-on: ubuntu-latest
