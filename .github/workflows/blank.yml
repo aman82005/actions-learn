@@ -5,8 +5,12 @@ on:
       - main
       - 'release/**'
   pull_request:
+    types:
+      - opened
     branches:
-      - main 
+      - main
+
+
 jobs: 
   hello:
     runs-on: ubuntu-latest
