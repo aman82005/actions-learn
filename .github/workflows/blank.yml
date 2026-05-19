@@ -8,6 +8,7 @@ jobs:
         run: |
           echo "hi $"{{vars.MY_NAME}}" "
           echo "welcome to git hub actions "
+          echo " echo"{{secrets.DOCKER_PASSWORD}}""
   
   build: 
     runs-on: ubuntu-latest
