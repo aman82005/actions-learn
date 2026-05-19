@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: greeting statement
         run: |
-          echo "hi "
+          echo "hi $"{{vars.MY_NAME}}" "
           echo "welcome to git hub actions "
   
   build: 
