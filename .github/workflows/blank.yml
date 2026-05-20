@@ -16,5 +16,5 @@ jobs:
         run: |
           aws s3 sync ./ s3://git-actions-cicd/ \
           --exclude "*" \
-          --include "index.html"
+          --include "index.html" \
           --content-type text/html
