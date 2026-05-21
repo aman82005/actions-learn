@@ -8,7 +8,7 @@ on:
                 default: dev
 jobs:
     inputs-demo:
-        runs-on: ubuntu-lates
+        runs-on: ubuntu-latest
         steps:
             - name: deploy the app
-              run: echo " deploying the application to ${{inputs.enviorment}}"
+              run: echo " deploying the application to ${{inputs.environment}}"
