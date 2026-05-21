@@ -11,4 +11,6 @@ jobs:
             - name: print all variables under git hub
               run: echo "${{toJson(github)}}"
             - name: print all env variable
-              run : echo "$printenv"
+              run : printenv
+            - name: latest commit id
+              run: echo "$GITHUB_SHA"
