@@ -1,0 +1,16 @@
+name: context demo 
+on: workflow_dispatch
+jobs:
+    context-demo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: use context variables
+              run: |
+                echo " this is workflow is triggered by ${{github.actor}} " 
+                echo " this repository name is ${{github.repository}}"
+            - name: print all variables under git hub
+              run: echo "${{toJson(github)}}"
+            - name: print all env variable
+              run : printenv
+            - name: latest commit id
+              run: echo "$GITHUB_SHA"
